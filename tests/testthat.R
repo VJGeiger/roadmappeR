@@ -1,4 +1,4 @@
 library(testthat)
-library(rlroadmap)
+library(roadmappeR)
 
-test_check("rlroadmap")
+test_check("roadmappeR")

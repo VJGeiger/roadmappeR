@@ -129,7 +129,7 @@ plot_roadmap <- function(milestones, editable = FALSE, title = NULL) {
 # The JavaScript that makes the markers draggable (inst/js/drag.js).
 #' @noRd
 drag_js <- function() {
-  path <- system.file("js", "drag.js", package = "rlroadmap", mustWork = TRUE)
+  path <- system.file("js", "drag.js", package = utils::packageName(), mustWork = TRUE)
   paste(readLines(path, warn = FALSE), collapse = "\n")
 }
 

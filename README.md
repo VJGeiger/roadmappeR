@@ -1,6 +1,6 @@
 # roadmappeR <img src="man/figures/logo.png" align="right" height="139"/>
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/VJGeiger/roadmappeR/actions/workflows/r.yml/badge.svg)](https://github.com/VJGeiger/roadmappeR/actions/workflows/r.yml)
+[![R-CMD-check](https://github.com/VJGeiger/roadmappeR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/VJGeiger/roadmappeR/actions/workflows/R-CMD-check.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub release](https://img.shields.io/github/v/release/VJGeiger/roadmappeR)](https://github.com/VJGeiger/roadmappeR/releases)
 [![Code size](https://img.shields.io/github/languages/code-size/VJGeiger/roadmappeR)](https://github.com/VJGeiger/roadmappeR)

@@ -14,7 +14,7 @@
 #' file.copy(roadmap_example(), "milestones.csv")
 #' }
 roadmap_example <- function() {
-  system.file("extdata", "milestones.csv", package = "rlroadmap",
+  system.file("extdata", "milestones.csv", package = utils::packageName(),
               mustWork = TRUE)
 }
 
