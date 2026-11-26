@@ -27,7 +27,7 @@ remotes::install_github("VJGeiger/roadmappeR")
 
 ## Usage
 
-``` r
+```R
 library(roadmappeR)
 
 # start with a copy of the example data
