@@ -23,11 +23,11 @@ Simple tool for start-ups to first define a roadmap in their terms by setting re
 # install.packages("remotes")
 remotes::install_github("VJGeiger/roadmappeR")
 ```
-```
+
 
 ## Usage
 
-``` r
+```R
 library(roadmappeR)
 
 # start with a copy of the example data
