@@ -43,6 +43,18 @@ plot_roadmap(ms)
 
 See `?"milestones-format"` for the csv columns.
 
+## Example
+
+`plot_roadmap()` on the example data: one lane per readiness track, dependencies
+as arrows (the dark arrow is the longest one), and a multiline comment on hover.
+
+<img src="man/figures/example-roadmap.png" width="100%" alt="Example roadmap with TRL, MRL and FRL lanes, dependency arrows and a hover comment"/>
+
+`run_roadmap()` opens the same plot in the app: drag a point to move it, click a
+point to edit its dependencies and comment, or add milestones and tracks.
+
+<img src="man/figures/example-app.png" width="100%" alt="The roadmap app with a milestone selected for editing"/>
+
 
 ---
 
@@ -50,5 +62,3 @@ See `?"milestones-format"` for the csv columns.
 
 Issues and pull requests welcome. Please open an issue before starting
 significant work so we can discuss the approach first.
-
-
