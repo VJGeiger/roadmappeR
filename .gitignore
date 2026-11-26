@@ -46,7 +46,7 @@ vignettes/*.pdf
 /doc/
 
 # pkdown
-/docs/
+#/docs/
 
 # translation temp files
 po/*~

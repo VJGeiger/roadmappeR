@@ -1,0 +1,8 @@
+/* Keep the hex logo small on every page of the pkgdown site
+   (README image on the home page, and pkgdown's own page logo). */
+img.logo,
+img[src*="logo"] {
+  width: 100px !important;
+  max-width: 100px !important;
+  height: auto !important;
+}

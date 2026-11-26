@@ -1,0 +1,22 @@
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/articles/roadmappeR.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/export_snapshot.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/milestones-format.html</loc></url>
+<url><loc>/reference/move_milestone.html</loc></url>
+<url><loc>/reference/parse_dependencies.html</loc></url>
+<url><loc>/reference/plot_roadmap.html</loc></url>
+<url><loc>/reference/read_milestones.html</loc></url>
+<url><loc>/reference/resolve_milestones.html</loc></url>
+<url><loc>/reference/roadmap_example.html</loc></url>
+<url><loc>/reference/roadmappeR-package.html</loc></url>
+<url><loc>/reference/run_roadmap.html</loc></url>
+<url><loc>/reference/validate_milestones.html</loc></url>
+</urlset>
+

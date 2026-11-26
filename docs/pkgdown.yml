@@ -1,0 +1,6 @@
+pandoc: 3.6.3
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  roadmappeR: roadmappeR.html
+last_built: 2026-11-26T20:34Z
