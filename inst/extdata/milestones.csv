@@ -1,0 +1,17 @@
+id,track,level,label,date,after,status,comment
+TRL3,TRL,3,TRL 3,2026-01-15,,achieved,"Proof of concept in lab"
+TRL4,TRL,4,TRL 4,2026-09-30,,achieved,"Component validation in lab
+Report filed with the steering group
+Open item: long-term stability data"
+TRL5,TRL,5,TRL 5,,TRL4:12,planned,"Takes a year after TRL 4"
+TRL6,TRL,6,TRL 6,,TRL5:10,planned,"Prototype demo in relevant environment"
+TRL7,TRL,7,TRL 7,,TRL6:14;MRL6:1,planned,"Demo in operational environment
+Needs the manufacturing line (MRL 6) too - the longest dependency wins"
+MRL3,MRL,3,MRL 3,2026-03-01,,achieved,"Manufacturing concepts identified"
+MRL4,MRL,4,MRL 4,,TRL4:5,planned,"MRL rises 5 months after TRL 4"
+MRL5,MRL,5,MRL 5,,TRL5:3,planned,"Pilot line capability"
+MRL6,MRL,6,MRL 6,,MRL5:9,planned,"Critical manufacturing processes demonstrated"
+FRL2,FRL,2,FRL 2,2026-02-01,,achieved,"Seed funding secured"
+FRL4,FRL,4,FRL 4,,TRL4:2,planned,"Grant application submitted after TRL 4"
+FRL5,FRL,5,FRL 5,,FRL4:9,planned,"Follow-on funding closed"
+FRL6,FRL,6,FRL 6,,FRL5:12;TRL6:3,planned,"Series B: 12 months after FRL 5 or 3 months after TRL 6, whichever is later"

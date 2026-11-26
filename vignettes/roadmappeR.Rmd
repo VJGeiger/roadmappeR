@@ -1,0 +1,88 @@
+---
+title: "Getting started with roadmappeR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with roadmappeR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+```{r setup}
+library(rlroadmap)
+```
+
+## general idea
+
+A roadmap is based on a set of milestones. Each one sits on a track of readiness levels (TRL, MRL, FRL, or anything you like), and is either on a fixed date, or
+x months after one or more other milestones. 
+
+Everything is stored in one plain csv file, see `?"milestones-format"`.
+
+## Start from the example
+
+```{r}
+csv <- tempfile(fileext = ".csv")
+file.copy(roadmap_example(), csv)
+ms <- read_milestones(csv)
+ms[, c("id", "date", "after", "status")]
+```
+
+`after` reads "after TRL 6 by 14 months and after MRL 6 by 1 month" for
+`TRL6:14;MRL6:1`. Dates are computed from these rules:
+
+```{r}
+r <- resolve_milestones(ms)
+r[r$id %in% c("TRL5", "TRL7", "FRL6"), c("id", "when", "driver")]
+```
+
+`driver` is the dependency that decides the date, shown as the dark arrow.
+
+## Plot
+
+```{r, fig.width = 9, fig.height = 4.5}
+plot_roadmap(ms)
+```
+
+Hover a point to see its date, dependencies and comment (which may have several
+lines).
+
+## Move things around
+
+In the app you drag points. In code, the same operation is
+`move_milestone()`. Moving a dependent milestone rewrites the lag of its longest
+dependency; everything after it follows.
+
+```{r}
+res <- move_milestone(ms, "TRL7", "2029-11-30")
+res$df$after[res$df$id == "TRL7"]
+```
+
+A move that would break a dependency is refused:
+
+```{r}
+move_milestone(ms, "TRL7", "2028-09-01")$message
+```
+
+## The interactive app
+
+```{r, eval = FALSE}
+run_roadmap(csv)
+```
+
+- **Drag** a point sideways to move it.
+- **Click** a point to edit label, status, dependencies and comment.
+- **Add** milestones, or a new track by typing a new track name.
+
+Every change is saved straight to the CSV, keeping only the latest state.
+
+## Share the current status
+
+```{r, eval = FALSE}
+export_snapshot(csv, "roadmap_snapshot.html")
+```
+
+This writes one self-contained HTML file with hover but **no editing**.

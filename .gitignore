@@ -21,6 +21,9 @@
 # RStudio files
 .Rproj.user/
 
+# test R file 
+playground.R
+
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
@@ -39,11 +42,20 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
+# devtools
+/doc/
+
+# pkdown
+/docs/
 
 # translation temp files
 po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# quatro cache
+vignettes/.quarto/
+/doc/
+/Meta/
+
